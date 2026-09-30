@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <title>Контакти</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background-color: lightblue;
+      }
+      h1, h2 {
+        text-align: center;
+        color: #cdd4ca;
+      }
+      a {
+        color: #cdd4ca;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #f2be54;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+      p {
+        font-size: 150%;
+        color: aliceblue;
+      }
+      h4 {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: white;
+      }
+      div {
+        margin: 0 auto;
+        width: 300px;
+      }
+      input {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px 0 5px 10px;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: blue;
+      }
+      ::placeholder {
+        color: #cdd4ca;
+      }
+      #submit {
+        position: absolute;
+        width: 110px;
+        left: 0;
+        right: 0;
+        padding-left: 0%;
+        margin: 30px auto;
+        color: azure;
+      }
+      label {
+        margin-left: 10px;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h4>Створити новий обліковий запис</h4>
+    <div>
+      <form name="user_form" action="#" method="post">
+        <label for="login">Логін</label>
+        <br>
+        <input type="text" name="login" placeholder="Логін" id="login" size="35" required>
+        <br>
+        <label for="email">Електронна скринька</label>
+        <br>
+        <input type="email" name="email" placeholder="Електронна скринька" id="email" size="35" required>
+        <br>
+        <label for="password">Пароль</label>
+        <br>
+        <input type="password" name="password" placeholder="Пароль" id="password" size="35" required>
+        <br>
+        <input type="submit" name="submit" id="submit" value="Відправити">
+      </form>
+    </div>
+  </body>
+</html>
